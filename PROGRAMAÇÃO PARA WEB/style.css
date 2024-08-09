@@ -1,12 +1,39 @@
-#title {
-    color: blue;
-    text-align: center;
+.container {
+    background-color: grey;
+    position: absolute;
+    margin: 20px 20px 20px 20px;
 }
 
 .input-form {
     border: 1px solid;
 }
 
+.register-button {
+
+}
+
 .main-footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
     border: 1px solid;
+}
+
+body {
+    background-color: lightgray;
+}
+
+h1 {
+    color: darkolivegreen;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+p {
+    color: darkolivegreen;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
 }
