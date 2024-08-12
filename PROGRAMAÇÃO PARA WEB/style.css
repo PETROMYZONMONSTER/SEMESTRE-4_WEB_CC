@@ -1,19 +1,18 @@
 .page-container {
     position: fixed;
-    top: 0;
-    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     height: 100%;
     width: 100%;
 }
 
 .form-body {
-    width: 25%;
-    height: 50%;
+    max-width: 15rem;
+    max-height: 50%;
     background-color: white;
     border: 1px solid black;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .input-form {
@@ -39,6 +38,7 @@
 
 body {
     background-color: lightgray;
+    margin: 0;
 }
 
 h1 {
