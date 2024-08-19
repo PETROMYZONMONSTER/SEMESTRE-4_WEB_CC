@@ -5,6 +5,7 @@ SubmitButton.addEventListener("on-click", submit);
 function submit() {
     let NameElement = document.getElementById("Name").value;
     let AgeElement = document.getElementById("Age").value;
+    let CpfElement = document.getElementById("Cpf").value;
     let EmailElement = document.getElementById("E-mail").value;
 
     let EmailPattern = /^[\w\.-]+@\w+(\.\w+)+$/;
@@ -15,7 +16,8 @@ function submit() {
         console.log("Invalid E-mail format:", EmailElement);
     }
 
-    console.log(“Name value:”NameElement);
-    console.log(“Age value:”AgeElement);
+    console.log("Name value:",NameElement);
+    console.log("Cpf value:",CpfElement);
+    console.log("Age value:",AgeElement);
 }
 
