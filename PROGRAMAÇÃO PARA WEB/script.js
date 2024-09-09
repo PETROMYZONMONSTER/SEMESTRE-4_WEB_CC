@@ -3,10 +3,10 @@ let SubmitButton = document.getElementById("onclick");
 SubmitButton.addEventListener("on-click", submit);
 
 function submit() {
-    let NameElement = document.getElementById("Name").value;
-    let AgeElement = document.getElementById("Age").value;
-    let CpfElement = document.getElementById("Cpf").value;
-    let EmailElement = document.getElementById("E-mail").value;
+    var NameElement = document.getElementById("Name").value;
+    var AgeElement = document.getElementById("Age").value;
+    var CpfElement = document.getElementById("Cpf").value;
+    var EmailElement = document.getElementById("E-mail").value;
 
     console.log("Name value:", NameElement);
     console.log("Cpf value:", CpfElement);
@@ -14,7 +14,7 @@ function submit() {
     console.log("E-mail value:", EmailElement);
 }
 
-function validate(NameElement, AgeElement, CpfElement, EmailElement, ){
+function validate(){
     let BasicPattern = /[a-zA-Z]/;
     let CpfPattern = /^[\d.-]+$/;
     let EmailPattern = /^[\w.-]+@\w+(\.\w+)+$/;
