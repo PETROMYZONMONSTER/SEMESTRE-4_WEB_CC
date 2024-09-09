@@ -8,16 +8,29 @@ function submit() {
     let CpfElement = document.getElementById("Cpf").value;
     let EmailElement = document.getElementById("E-mail").value;
 
-    let EmailPattern = /^[\w\.-]+@\w+(\.\w+)+$/;
-
-    if (EmailPattern.test(EmailElement)) {
-        console.log("Valid E-mail format:", EmailElement);
-    } else {
-        console.log("Invalid E-mail format:", EmailElement);
-    }
-
-    console.log("Name value:",NameElement);
-    console.log("Cpf value:",CpfElement);
-    console.log("Age value:",AgeElement);
+    console.log("Name value:", NameElement);
+    console.log("Cpf value:", CpfElement);
+    console.log("Age value:", AgeElement);
+    console.log("E-mail value:", EmailElement);
 }
 
+function validate(NameElement, AgeElement, CpfElement, EmailElement, ){
+    let BasicPattern = /[a-zA-Z]/;
+    let CpfPattern = /^[\d.-]+$/;
+    let EmailPattern = /^[\w.-]+@\w+(\.\w+)+$/;
+
+    if (BasicPattern.test(NameElement)) {
+        console.log("Valid Name format:", NameElement);
+    }
+    if (!BasicPattern.test(AgeElement)) {
+        console.log("Valid Age format:", AgeElement);
+    }
+    if (CpfPattern.test(CpfElement)) {
+
+        console.log("Valid Cpf format:", CpfPattern);
+    }
+    if (EmailPattern.test(EmailElement)) {
+        console.log("Valid E-mail format:", EmailElement);
+    }
+
+}
